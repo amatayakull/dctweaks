@@ -1,113 +1,30 @@
-/* === Remove all rounded corners in Discord === */
-
-/* Global reset */
-* {
-    border-radius: 0 !important;
+[class*="embedImage"] {
+  border-radius: 0px !important;
 }
-
-/* Specific Discord UI elements (extra coverage) */
-button,
-img,
-div,
-span,
-textarea,
-input {
-    border-radius: 0 !important;
+[class*="embedVideo"] {
+  border-radius: 0px !important;
 }
-
-/* Chat bubbles / messages */
-.message__5126c,
-.messageContent_abea64 {
-    border-radius: 0 !important;
+[class*="embedMedia"] {
+  border-radius: 0px !important;
 }
-
-/* Sidebars / panels */
-.sidebar_c48ade,
-.chatContent_f75fb0,
-.container_c48ade {
-    border-radius: 0 !important;
+[class*="visualMediaItemContainer_"] {
+   border-radius: 0px !important;
 }
-
-/* Popouts / modals */
-.layer__960e4,
-.menu_dc0f0 {
-    border-radius: 0 !important;
+[class*="oneByOneGrid"] {
+   border-radius: 0px !important;
 }
-
-/* Emojis / avatars */
-.avatar__07f91,
-.emoji {
-    border-radius: 0 !important;
+[class*="avatar"] {
+   border-radius: 0px !important;
 }
-
-/* Buttons (hover, active, etc.) */
-.lookFilled__201d5,
-.lookOutlined__201d5,
-.button__201d5 {
-    border-radius: 0 !important;
+[class*="imageWrapper"] {
+   border-radius: 0px !important;
 }
-
-/* Catch most avatar images */
-img[class*="avatar"],
-svg[class*="avatar"] {
-    border-radius: 0 !important;
+[class*="mosaicItem"] {
+   border-radius: 0px !important;
 }
-
-/* Avatar wrappers (important for profiles/popouts) */
-[class*="avatar"],
-[class*="Avatar"],
-[class*="avatarWrapper"],
-[class*="avatarStack"],
-[class*="avatarDecoration"] {
-    border-radius: 0 !important;
+[class*="video"] {
+   border-radius: 0px !important;
 }
-
-/* Profile modal / user popout containers */
-[class*="userProfile"],
-[class*="profile"],
-[class*="profilePopout"],
-[class*="outer"] img {
-    border-radius: 0 !important;
-}
-
-/* Discord often uses masks for avatars */
-foreignObject,
-mask,
-clipPath {
-    border-radius: 0 !important;
-}
-
-/* === REMOVE DISCORD AVATAR MASKING (PROFILE PAGES) === */
-
-/* Kill rounded container behavior */
-[class*="avatar"],
-[class*="Avatar"],
-[class*="userPopout"],
-[class*="userProfile"],
-[class*="profile"] {
-    border-radius: 0 !important;
-    overflow: visible !important;
-}
-
-/* Remove SVG masking used in profile avatars */
-mask,
-foreignObject,
-svg [mask],
-[style*="mask"] {
-    mask: none !important;
-    -webkit-mask: none !important;
-}
-
-/* Force avatar images to ignore clipping */
-img[class*="avatar"] {
-    clip-path: none !important;
-    border-radius: 0 !important;
-}
-
-/* Some profiles use decorative wrapper layers */
-[class*="avatarStack"],
-[class*="avatarWrapper"],
-[class*="avatarDecoration"] {
-    border-radius: 0 !important;
-    overflow: visible !important;
-}
+[class*="loadingOverlay_"] {
+   border-radius: 0px !important;
+}   
