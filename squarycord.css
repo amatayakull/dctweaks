@@ -76,3 +76,38 @@ mask,
 clipPath {
     border-radius: 0 !important;
 }
+
+/* === REMOVE DISCORD AVATAR MASKING (PROFILE PAGES) === */
+
+/* Kill rounded container behavior */
+[class*="avatar"],
+[class*="Avatar"],
+[class*="userPopout"],
+[class*="userProfile"],
+[class*="profile"] {
+    border-radius: 0 !important;
+    overflow: visible !important;
+}
+
+/* Remove SVG masking used in profile avatars */
+mask,
+foreignObject,
+svg [mask],
+[style*="mask"] {
+    mask: none !important;
+    -webkit-mask: none !important;
+}
+
+/* Force avatar images to ignore clipping */
+img[class*="avatar"] {
+    clip-path: none !important;
+    border-radius: 0 !important;
+}
+
+/* Some profiles use decorative wrapper layers */
+[class*="avatarStack"],
+[class*="avatarWrapper"],
+[class*="avatarDecoration"] {
+    border-radius: 0 !important;
+    overflow: visible !important;
+}
