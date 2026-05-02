@@ -1,0 +1,48 @@
+/* === Remove all rounded corners in Discord === */
+
+/* Global reset */
+* {
+    border-radius: 0 !important;
+}
+
+/* Specific Discord UI elements (extra coverage) */
+button,
+img,
+div,
+span,
+textarea,
+input {
+    border-radius: 0 !important;
+}
+
+/* Chat bubbles / messages */
+.message__5126c,
+.messageContent_abea64 {
+    border-radius: 0 !important;
+}
+
+/* Sidebars / panels */
+.sidebar_c48ade,
+.chatContent_f75fb0,
+.container_c48ade {
+    border-radius: 0 !important;
+}
+
+/* Popouts / modals */
+.layer__960e4,
+.menu_dc0f0 {
+    border-radius: 0 !important;
+}
+
+/* Emojis / avatars */
+.avatar__07f91,
+.emoji {
+    border-radius: 0 !important;
+}
+
+/* Buttons (hover, active, etc.) */
+.lookFilled__201d5,
+.lookOutlined__201d5,
+.button__201d5 {
+    border-radius: 0 !important;
+}
