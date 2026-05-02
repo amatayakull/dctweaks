@@ -46,3 +46,33 @@ input {
 .button__201d5 {
     border-radius: 0 !important;
 }
+
+/* Catch most avatar images */
+img[class*="avatar"],
+svg[class*="avatar"] {
+    border-radius: 0 !important;
+}
+
+/* Avatar wrappers (important for profiles/popouts) */
+[class*="avatar"],
+[class*="Avatar"],
+[class*="avatarWrapper"],
+[class*="avatarStack"],
+[class*="avatarDecoration"] {
+    border-radius: 0 !important;
+}
+
+/* Profile modal / user popout containers */
+[class*="userProfile"],
+[class*="profile"],
+[class*="profilePopout"],
+[class*="outer"] img {
+    border-radius: 0 !important;
+}
+
+/* Discord often uses masks for avatars */
+foreignObject,
+mask,
+clipPath {
+    border-radius: 0 !important;
+}
